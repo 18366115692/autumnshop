@@ -1,0 +1,36 @@
+.collect-list {
+  .collect-goods-item {
+    display: flex;
+    height: 235rpx;
+    border-bottom: 2rpx solid #ddd;
+    background-color: #fff;
+    .goods-item-left {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      image {
+        width: 70%;
+        height: 70%;
+      }
+    }
+    .goods-item-right {
+      flex: 3;
+      padding-right: 10rpx;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .goods-title {
+        color: #000;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+      .goods-price {
+        color: red;
+        font-size: 32rpx;
+      }
+    }
+  }
+}

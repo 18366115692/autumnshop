@@ -1,0 +1,44 @@
+.category-container {
+  display: flex;
+  height: ~'calc(100vh - 80rpx)';
+  .category-left {
+    flex: 2;
+    padding: 10rpx 0;
+    border-right: 1rpx solid #eee;
+    .left-item {
+      height: 60rpx;
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .category-right {
+    flex: 5;
+    text-align: center;
+    padding: 20rpx 0;
+    .title {
+      .strake {
+        padding: 0 10rpx;
+      }
+    }
+    .right-group {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10rpx;
+      .right-item {
+        width: 33.33%;
+        padding: 20rpx;
+        image {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.active {
+  color: red !important;
+  border-left: 5rpx solid red;
+}

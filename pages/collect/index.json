@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Collect": "../../components/collect/index"
+  },
+  "navigationBarTitleText": "收藏列表"
+}

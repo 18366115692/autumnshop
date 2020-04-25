@@ -1,0 +1,54 @@
+.opinion-wrapper {
+  background-color: #fff;
+  margin: 20rpx;
+  padding: 20rpx;
+  border-radius: 20rpx;
+}
+.opinion-wrapper textarea {
+  margin-bottom: 20rpx;
+  width: 100%;
+}
+.opinion-wrapper .add-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+.opinion-wrapper .add-img button {
+  margin-left: 0;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  padding: 0;
+  width: 115rpx;
+  height: 115rpx;
+  text-align: center;
+  line-height: 100rpx;
+  background-color: #ddd;
+  font-size: 80rpx;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.8);
+}
+.opinion-wrapper .add-img .img-item {
+  position: relative;
+  width: 115rpx;
+  height: 115rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+.opinion-wrapper .add-img .img-item image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+.opinion-wrapper .add-img .img-item .cancle-img {
+  width: 44rpx;
+  height: 44rpx;
+  position: absolute;
+  top: -15rpx;
+  right: -15rpx;
+}
+.submit-info {
+  width: 260rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20rpx;
+}

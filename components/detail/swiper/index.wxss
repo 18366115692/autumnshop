@@ -1,0 +1,10 @@
+.detail-swiper .detail-swiper-group {
+  width: 100%;
+  height: 65vw;
+}
+.detail-swiper .detail-swiper-group .detail-swiper-item {
+  text-align: center;
+}
+.detail-swiper .detail-swiper-group .detail-swiper-item image {
+  width: 70%;
+}

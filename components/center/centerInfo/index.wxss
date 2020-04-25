@@ -1,0 +1,44 @@
+.center-wrapper {
+  height: 50vh;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+.center-wrapper .user-info {
+  position: relative;
+}
+.center-wrapper .user-info .user-bg-img {
+  height: 50vh;
+  filter: blur(10rpx);
+  /* 高斯模糊 */
+}
+.center-wrapper .user-info .user-logo {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.center-wrapper .user-info .user-logo image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.center-wrapper .user-info .user-logo .user-title {
+  color: #fff;
+  font-size: 40rpx;
+  margin-top: 100rpx;
+}
+.center-wrapper .user-login {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.center-wrapper .user-login navigator {
+  border: 1px solid #3CB371;
+  color: #3CB371;
+  font-size: 40rpx;
+  padding: 20rpx;
+  border-radius: 10rpx;
+}

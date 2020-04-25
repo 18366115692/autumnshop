@@ -1,0 +1,24 @@
+<!-- 订单查询 -->
+<view class="top-bar-group">
+  <view
+    class="top-bar-item {{currentIndex === index ? 'active' : ''}}"
+    wx:for="{{TopBar}}"
+    wx:key="id"
+    bindtap="changeIndex"
+    data-index="{{index}}"
+  >
+    {{ item.name }}
+  </view>
+</view>
+<view class="content-info" wx:if="{{currentIndex === 0}}">
+  测试项目，目前没有全部订单信息
+</view>
+<view class="content-info" wx:elif="{{currentIndex === 1}}">
+  测试项目，目前没有待付款信息
+</view>
+<view class="content-info" wx:elif="{{currentIndex === 2}}">
+  测试项目，目前没有待收货信息
+</view>
+<view class="content-info" wx:else>
+  测试项目，目前没有退货/退款信息
+</view>

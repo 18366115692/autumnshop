@@ -1,0 +1,13 @@
+<view class="detail-title">
+  <view class="detail-title-price">
+    ¥{{goodsDetailList.goods_price}}
+  </view>
+  <view class="detail-title-info">
+    <view class="info-title">{{goodsDetailList.goods_name}}</view>
+    <view class="info-collect" data-id="{{goodsDetailList.goods_id}}" bindtap="handleCollectGood">
+      <text class="iconfont {{isCollect?'icon-shoucang1':'icon-shoucang'}}"></text>
+      <text>收藏</text>
+    </view>
+  </view>
+</view>
+  

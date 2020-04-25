@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "Search": "../../components/home/Search/Search",
+    "Category": "../../components/category/categoryAll/category"
+  },
+  "navigationBarTitleText": "商品分类"
+}

@@ -1,0 +1,14 @@
+<view class="center-wrapper" bindtap="test">
+  <view wx:if="{{userInfo.nickName}}" class="user-info">
+    <image class="user-bg-img" src="{{userInfo.avatarUrl}}"/>
+    <view class="user-logo">
+      <image src="{{userInfo.avatarUrl}}"/>
+      <view class="user-title">{{userInfo.nickName}}</view>
+    </view>
+  </view>
+  <view wx:else class="user-login">
+    <navigator url="../../pages/login/index">
+      登录
+    </navigator>
+  </view>
+</view>

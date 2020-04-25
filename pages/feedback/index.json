@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "Tabs": "../../components/common/Tabs/index",
+    "subtitle": "../../components/feedback/subtitle/index",
+    "OpinionText": "../../components/feedback/opinionText/index"
+  },
+  "navigationBarTitleText": "意见反馈"
+}

@@ -1,0 +1,11 @@
+.home-nav-list {
+  display: flex;
+  padding: 10rpx;
+}
+.home-nav-list .home-nav-item {
+  padding: 10rpx;
+  flex: 1;
+}
+.home-nav-list .home-nav-item navigator image {
+  width: 100%;
+}

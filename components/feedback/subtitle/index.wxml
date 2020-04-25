@@ -1,0 +1,9 @@
+<view class="subtitle-list">
+  <view 
+    class="subtitle-item"
+    wx:for="{{sublist}}"
+    wx:key="id"
+  >
+    {{ item.name }}
+  </view>
+</view>

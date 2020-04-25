@@ -1,0 +1,11 @@
+<view class="top-bar-group">
+  <view
+    class="top-bar-item {{currentIndex === index ? 'active' : ''}}"
+    wx:for="{{tabs}}"
+    wx:key="id"
+    bindtap="changeIndex"
+    data-index="{{index}}"
+  >
+    {{ item.name }}
+  </view>
+</view>

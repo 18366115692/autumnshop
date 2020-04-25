@@ -1,0 +1,41 @@
+<view class="category-container">
+  <!-- 左边的列表 -->
+  <scroll-view scroll-y class="category-left">
+    <view
+      class="{{currentIndex === index ? 'active' : ''}} left-item"
+      wx:for="{{leftList}}"
+      wx:key="id"
+      bindtap="changeIndex"
+      data-index="{{index}}"
+    >
+      {{ item.name }}
+    </view>
+  </scroll-view>
+
+  <!-- 右边的列表 -->
+  <scroll-view scroll-top="{{scrollTop}}" scroll-y	class="category-right">
+    <view
+      wx:for="{{rightList}}"
+      wx:for-item="list"
+      wx:key="cat_id"
+    >
+      <view class="title">
+        <text class="strake">/</text>
+        <text class="">{{list.cat_name}}</text>
+        <text class="strake">/</text>
+      </view>
+      <view class="right-group">
+        <navigator
+          class="right-item"
+          wx:for="{{list.children}}"
+          wx:for-item="item"
+          wx:key="cat_id"
+          url="../../pages/goods_list/index?cid={{item.cat_id}}"
+        >
+          <image src="{{item.cat_icon}}" mode="widthFix" />
+          <text>{{ item.cat_name }}</text>
+        </navigator>
+      </view>
+    </view>
+  </scroll-view>
+</view>

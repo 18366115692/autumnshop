@@ -1,0 +1,65 @@
+page {
+  background-color: #eee;
+}
+.content-wrapper {
+  position: relative;
+  width: 100%;
+}
+.content-wrapper .content-wrapper-info {
+  width: 90%;
+  position: absolute;
+  top: -50rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.content-wrapper .content-wrapper-info .collect-list {
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  display: flex;
+}
+.content-wrapper .content-wrapper-info .collect-list .collect-item {
+  flex: 1;
+  text-align: center;
+  padding: 10rpx 0;
+}
+.content-wrapper .content-wrapper-info .collect-list .collect-item .collect-count {
+  color: var(--themeColor);
+}
+.content-wrapper .content-wrapper-info .order-list-title {
+  border-bottom: 4rpx solid #ddd;
+  padding: 20rpx;
+  background-color: #fff;
+}
+.content-wrapper .content-wrapper-info .order-list {
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  display: flex;
+  padding: 10rpx 0;
+}
+.content-wrapper .content-wrapper-info .order-list .order-item {
+  flex: 1;
+  text-align: center;
+}
+.content-wrapper .content-wrapper-info .order-list .order-item .order-count {
+  color: var(--themeColor);
+}
+.content-wrapper .content-wrapper-info .address {
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+}
+.content-wrapper .content-wrapper-info .other-serve-list {
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.content-wrapper .content-wrapper-info .other-serve-list .other-serve-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+  border-bottom: 5rpx solid #ddd;
+}
+.content-wrapper .content-wrapper-info .extend {
+  padding: 20rpx;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}

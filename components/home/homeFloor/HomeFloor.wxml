@@ -1,0 +1,24 @@
+<view class="home-floor">
+  <view 
+    class="home-floor-group"
+    wx:for="{{floorList}}"
+    wx:for-item="list"
+    wx:key="name"
+  >
+    <view class="home-floor-title">
+      <image src="{{list.floor_title.image_src}}" mode="widthFix"/>
+    </view>
+    <view class="home-floor-content">
+      <navigator 
+        wx:for="{{list.product_list}}" 
+        wx:for-item="item"
+        wx:for-index="index2"
+        wx:key="name"
+        url="../..{{item.navigator_url}}"
+        open-type="navigate"
+      >
+        <image mode="{{index2===0 ? 'widthFix' : 'scaleToFill'}}" src="{{item.image_src}}"/>
+      </navigator>
+    </view>
+  </view>
+</view>

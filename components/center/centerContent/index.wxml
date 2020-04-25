@@ -1,0 +1,55 @@
+<view class="content-wrapper">
+  <view class="content-wrapper-info">
+    <view class="collect-list">
+      <navigator class="collect-item" bindtap="aaaa">
+        <view class="collect-count">0</view>
+        <view class="collect-name">收藏的店铺</view>
+      </navigator>
+      <navigator url="../../pages/collect/index" class="collect-item">
+        <view class="collect-count">{{count}}</view>
+        <view class="collect-name">收藏的商品</view>
+      </navigator>
+      <navigator class="collect-item">
+        <view class="collect-count">0</view>
+        <view class="collect-name">关注的商品</view>
+      </navigator>
+      <navigator class="collect-item">
+        <view class="collect-count ">0</view>
+        <view class="collect-name">我的足迹</view>
+      </navigator>
+    </view>
+    <view class="order-list-title">我的订单</view>
+    <view class="order-list">
+      <navigator url="/pages/order/index?type=1" class="order-item">
+        <view class="order-count iconfont icon-order_icon"></view>
+        <view class="order-name">全部订单</view>
+      </navigator>
+      <navigator url="/pages/order/index?type=2" class="order-item">
+        <view class="order-count iconfont icon-fukuantongzhi"></view>
+        <view class="order-name">待付款</view>
+      </navigator>
+      <navigator url="/pages/order/index?type=3" class="order-item">
+        <view class="order-count iconfont icon-daishouhuo"></view>
+        <view class="order-name">待收货</view>
+      </navigator>
+      <navigator url="/pages/order/index?type=4" class="order-item">
+        <view class="order-count iconfont icon-tuihuotuikuan-"></view>
+        <view class="order-name">退款/退货</view>
+      </navigator>
+    </view>
+    <navigator class="address">收货地址管理</navigator>
+    <view class="other-serve-list">
+      <navigator class="other-serve-item">
+        <view>联系客服</view>
+        <view>400-618-4000</view>
+      </navigator>
+      <navigator url="../../pages/feedback/index" class="other-serve-item">
+        <view>意见反馈</view>
+      </navigator>
+      <navigator class="other-serve-item">
+        <view>联系客服</view>
+      </navigator>
+    </view>
+    <navigator class="extend">把应用推荐给其他人</navigator>
+  </view> 
+</view>

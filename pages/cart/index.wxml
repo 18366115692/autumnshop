@@ -1,0 +1,29 @@
+<view class="cart-wrapper">
+  <scroll-view scroll-y class="detail-scroll">
+    <!-- 获取地址 开始 -->
+    <CartAddress bindchangeAddress="handleChooseAddress" address="{{address}}"/>
+    <!-- 获取地址 结束 -->
+
+    <!-- 购物车列表 开始 -->
+    <CartList 
+      bindhandleChangeCount="handleChangeCount"
+      bindhandleChecked="handleChecked"
+      bindhandleChangeKey="handleChangeKey"
+      cartList="{{cartList}}"
+      key="{{key}}"
+    />
+    <!-- 购物车列表 结束 -->
+  </scroll-view>
+    
+
+  <!-- 结算 开始 -->
+  <CartPay 
+    payData="{{payData}}" 
+    key="{{key}}" 
+    disabled="{{disabled}}"
+    bindhandleAllChecked="handleAllChecked"
+    bindhandleRemoveCart="handleRemoveCart"
+  />
+  <!-- 结算 结束 -->
+</view>
+  

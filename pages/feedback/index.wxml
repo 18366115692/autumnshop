@@ -1,0 +1,11 @@
+<!-- 导航栏 开始 -->
+<Tabs bindchangeIndex="changeIndex" tabs="{{tabs}}" currentIndex="{{currentIndex}}"></Tabs>
+<!-- 导航栏 结束 -->
+<view class="feedback-title">
+  问题种类
+</view>
+
+<subtitle sublist="{{sublist}}"/>
+
+<OpinionText/>
+  

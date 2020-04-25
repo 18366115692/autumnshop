@@ -1,0 +1,22 @@
+<view class="user-address">
+  <view wx:if="{{!address.userName}}">
+    <button class="get-address" bindtap="chooseAddress" plain type="primary">
+      点击获取地址
+    </button>
+  </view>
+    
+  <view class="address-info" wx:else>
+    <view class="title">
+      <text class="user-name">
+        {{ address.userName }}
+      </text>
+      <text class="phone-num">
+        {{ address.telNumber }}
+      </text>
+    </view>
+    <view class="address">
+      {{ address.detail }}
+    </view>
+  </view>
+</view>
+  

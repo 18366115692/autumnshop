@@ -1,0 +1,20 @@
+<view class="search-wrapper">
+  <view class="search-title">
+    <input 
+      bindinput="handleSearch" 
+      value="{{value}}"
+      placeholder="请输入您要搜索的关键字"
+    ></input>
+    <button bindtap="handleClearValue" hidden="{{!key}}">取消</button>
+  </view>
+  <view class="search-content">
+    <navigator 
+      wx:for="{{searchList}}" 
+      wx:key="goods_id" 
+      url="/pages/goods_detail/index?goods_id={{item.goods_id}}"
+      class="search-item"
+    >
+      {{item.goods_name}}
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "Search": "../../components/home/Search/Search",
+    "CategoryList": "../../components/category/categoryList/index"
+  },
+  "navigationBarTitleText": "商品列表",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

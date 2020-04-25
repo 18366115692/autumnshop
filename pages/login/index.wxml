@@ -1,0 +1,3 @@
+<view class="login-info">
+  <button open-type="getUserInfo" type="primary" plain bindgetuserinfo="handleGetUserInfo">授权登录</button>
+</view>

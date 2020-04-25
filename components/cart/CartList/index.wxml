@@ -1,0 +1,39 @@
+<view class="cart-list">
+  <view class="theme">
+    <view class="theme-left">
+      购物车
+    </view>
+    <view class="theme-right" bindtap="handleChangeKey">
+      <view hidden="{{!key}}">管理</view>
+      <view hidden="{{key}}">完成</view>
+    </view>
+  </view>
+  <view 
+    class="cart-item"
+    wx:for="{{cartList}}"
+    wx:key="cat_id"
+  >
+    <checkbox-group data-id="{{item.goods_id}}" bindchange="handleChecked">
+      <checkbox checked="{{item.checked}}"></checkbox>
+    </checkbox-group>
+    <view class="logo">
+      <image src="{{item.goods_small_logo}}" mode="widthFix"/>
+    </view>
+    <view class="info">
+      <view class="info-title">
+        {{ item.goods_name }}
+      </view>
+      <view class="info-bottom">
+        <view class="price">
+          ¥{{ item.goods_price }}
+        </view>
+        <view class="count">
+          <button data-id="{{item.goods_id}}" data-val="-1" bindtap="handleChangeCount">-</button>
+          <view>{{ item.num }}</view>
+          <button data-id="{{item.goods_id}}" data-val="1" bindtap="handleChangeCount">+</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+  

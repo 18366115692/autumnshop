@@ -1,0 +1,8 @@
+.swiper-list {
+  width: 100%;
+  height: 340rpx;
+}
+.swiper-list .swiper-item navigator image {
+  width: 100%;
+  height: 100%;
+}

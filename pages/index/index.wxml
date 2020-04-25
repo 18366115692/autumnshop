@@ -1,0 +1,19 @@
+<view class="wrapper">
+  <!-- 搜索开始 -->
+  <Search/>
+  <!-- 搜索结束 -->
+
+  <!-- 轮播图开始 -->
+  <HomeSwiper swiperList="{{swiperList}}"/>
+  <!-- 轮播图结束 -->
+
+  <!-- 首页导航开始 -->
+  <HomeNav navigationList="{{navigationList}}"/>
+  <!-- 首页导航结束 -->
+
+  <!-- 首页楼层开始 -->
+  <HomeFloor floorList="{{floorList}}"/>
+  <!-- 首页楼层结束 -->
+
+</view>
+  

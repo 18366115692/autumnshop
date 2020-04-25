@@ -1,0 +1,16 @@
+<view class="category-container">
+  <!-- 搜索框 开始 -->
+  <Search/>
+  <!-- 搜索框 结束 -->
+
+  <!-- 分类列表 开始 -->
+  <Category 
+    leftList="{{leftList}}" 
+    currentIndex="{{currentIndex}}" 
+    rightList="{{rightList}}"
+    scrollTop="{{scrollTop}}"
+    bindchangeIndex="changeIndex"
+  />
+  <!-- 分类列表 开始 -->
+
+</view>

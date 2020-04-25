@@ -1,0 +1,4 @@
+<view class="detail-content">
+  <!-- 使用富文本标签显示标签页 -->
+  <rich-text class="" nodes="{{goodsDetailList.goods_introduce}}"></rich-text>
+</view>

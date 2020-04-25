@@ -1,0 +1,15 @@
+<view class="opinion-wrapper">
+  <textarea placeholder="请描述一下您的问题" bindinput="handleMonitorText" value="{{inputVal}}"></textarea>
+  <view class="add-img">
+    <button bindtap="handleChooseImg">+</button>
+    <view wx:for="{{imgList}}" wx:key="index" class="img-item">
+      <image data-index="{{index}}" bindtap="handlePreviewImg" src="{{item}}"/>
+      <view data-index="{{index}}" class="cancle-img" bindtap="handleClearImg"><icon type="clear" size="18" color="red"></icon></view>
+    </view>
+  </view>
+</view>
+  
+<button class="submit-info" bindtap="handleSubmitAdvise" type="warn">
+  <icon type="success_no_circle" size="23" color="white"></icon>
+  提交
+</button>

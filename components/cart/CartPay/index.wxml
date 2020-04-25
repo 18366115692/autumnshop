@@ -1,0 +1,23 @@
+<view class="cart-pay">
+  <view class="pay-left">
+    <checkbox-group bindchange="handleAllChecked">
+      <checkbox disabled="{{disabled}}" checked="{{payData.allChecked}}">全选</checkbox>
+    </checkbox-group>
+  </view>
+  <view class="pay-right">
+    <view class="pay-right-wrapper" hidden="{{!key}}">
+      <view class="pay-title">
+        <view>合计: </view>
+        <view class="pay-count">
+          ¥{{ payData.totalPrice }}
+        </view>
+      </view>
+      <view class="pay-sub">
+        结算({{ payData.totalNum }})
+      </view>
+    </view>
+    <view class="pay-right-delete" hidden="{{key}}">
+      <view bindtap="handleRemoveCart" class="delete">删除</view>
+    </view>
+  </view>
+</view>

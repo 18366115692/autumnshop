@@ -1,0 +1,17 @@
+.user-address {
+  padding: 20rpx;
+  border-bottom: 1px solid #ddd;
+}
+.user-address .address-info {
+  height: 100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.user-address .address-info .title {
+  display: flex;
+  justify-content: space-between;
+}
+.user-address .address-info .title text {
+  line-height: 20rpx;
+}

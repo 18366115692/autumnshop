@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "CenterInfo": "../../components/center/centerInfo/index",
+    "CenterContent": "../../components/center/centerContent/index"
+  },
+  "navigationBarTitleText": "个人中心"
+}

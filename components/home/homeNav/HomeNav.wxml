@@ -1,0 +1,12 @@
+<view class="home-nav-list">
+  <view 
+    class="home-nav-item" 
+    wx:for="{{navigationList}}" 
+    wx:key="name"
+  >
+    <navigator url="../../pages/category/index" open-type="switchTab">
+      <image class="" src="{{item.image_src}}" mode="widthFix"/>
+    </navigator>
+  </view>
+</view>
+  

@@ -1,0 +1,96 @@
+.cart-list {
+  .theme {
+    padding: 20rpx;
+    border-bottom: 1px solid #ddd;
+    color: var(--themeColor);
+    font-size: 32rpx;
+    font-weight: 600;
+    display: flex;
+    .theme-left {
+      flex: 8;
+    }
+    .theme-right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      color: #000;
+      font-weight: 400;
+    }
+  }
+  .cart-item {
+    padding: 20rpx;
+    width: 100%;
+    height: 187.5rpx;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .select {
+      flex-shrink: 0;
+      width: 50rpx;
+      height: 50rpx;
+      border: 1px solid #ddd;
+      border-radius: 6rpx;
+      color: var(--themeColor);
+      font-size: 50rpx;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo {
+      margin-left: 30rpx;
+      flex: 1;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      image {
+        width: 140rpx;
+      }
+    }
+    .info {
+      flex: 3;
+      height: 100%;
+      padding-left: 20rpx;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .info-title {
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+      .info-bottom {
+        display: flex;
+        justify-content: space-between;
+        .price {
+          color: var(--themeColor);
+          font-size: 32rpx;
+          font-weight: 400;
+        }
+        .count {
+          display: flex;
+          button {
+            padding: 0;
+            margin: 0;
+            width: 50rpx;
+            height: 50rpx;
+            border: 1px solid #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          view {
+            width: 60rpx;
+            height: 50rpx;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}

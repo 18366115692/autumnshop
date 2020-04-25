@@ -1,0 +1,7 @@
+<!-- 个人信息logo 开始 -->
+<CenterInfo userInfo="{{userInfo}}"/>
+<!-- 个人信息logo 结束 -->
+
+<!-- 个人信息内容 开始 -->
+<CenterContent count="{{count}}"/>
+<!-- 个人信息内容 结束 -->

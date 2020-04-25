@@ -1,0 +1,35 @@
+page {
+  padding: 10rpx;
+  background-color: #eee;
+}
+.top-bar-group {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+.top-bar-group .top-bar-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx 0;
+  color: #000;
+  font-size: 32rpx;
+}
+.top-bar-group .active {
+  color: red !important;
+  border-bottom: 3rpx solid red;
+}
+.nav-bar {
+  display: flex;
+}
+.nav-bar .nav-bar-item {
+  border: 3rpx solid #ddd;
+  margin: 10rpx 20rpx 20rpx 0;
+  padding: 10rpx;
+  background-color: #fff;
+}
+.nav-bar .active {
+  color: red !important;
+  border: 3rpx solid red;
+}

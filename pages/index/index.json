@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "Search": "../../components/home/Search/Search",
+    "HomeSwiper": "../../components/home/swiper/swiper",
+    "HomeNav": "../../components/home/homeNav/HomeNav",
+    "HomeFloor": "../../components/home/homeFloor/HomeFloor"
+  },
+  "navigationBarTitleText": "我的商城只有你"
+}

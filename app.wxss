@@ -1,0 +1,20 @@
+@import './style/iconfont.wxss';
+/* @import './components/detail/bottomBar/index.wxss'; */
+/* @import './components/detail/title/index.wxss'; */
+
+view,
+text,
+swiper,
+image,
+swiper-item,
+navigator {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 定义声明主题变量 */
+page {
+  --themeColor: #F7544B;
+  font-size: 28rpx;
+}

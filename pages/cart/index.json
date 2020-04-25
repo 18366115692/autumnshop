@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "CartAddress": "../../components/cart/CartAddress/index",
+    "CartList": "../../components/cart/CartList/index",
+    "CartPay": "../../components/cart/CartPay/index"
+  },
+  "navigationBarTitleText": "购物车"
+}

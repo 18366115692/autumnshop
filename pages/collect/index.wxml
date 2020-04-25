@@ -1,0 +1,27 @@
+<!-- 收藏导航 -->
+<view class="top-bar-group">
+  <view
+    class="top-bar-item {{currentIndex === index ? 'active' : ''}}"
+    wx:for="{{TopBar}}"
+    wx:key="id"
+    bindtap="changeIndex"
+    data-index="{{index}}"
+  >
+    {{ item.name }}
+  </view>
+</view>
+
+<view class="nav-bar">
+  <view
+    class="nav-bar-item {{currentItem === index ? 'active' : ''}}"
+    wx:for="{{NavBar}}"
+    wx:key="id"
+    bindtap="changeItem"
+    data-index="{{index}}"
+  >
+    {{ item.name }}
+  </view>
+</view>
+
+<!-- 收藏列表 -->
+<Collect collect="{{collect}}"/>

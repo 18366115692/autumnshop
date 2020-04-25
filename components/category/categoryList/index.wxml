@@ -1,0 +1,34 @@
+<view class="goods-list">
+  <view class="top-bar-group">
+    <view
+      class="top-bar-item {{currentIndex === index ? 'active' : ''}}"
+      wx:for="{{TopBar}}"
+      wx:key="id"
+      bindtap="changeIndex"
+      data-index="{{index}}"
+    >
+      {{ item.name }}
+    </view>
+  </view>
+  <view class="goods-content">
+    <navigator
+      class="goods-item"
+      wx:for="{{goodsList}}"
+      wx:key="goods_name" 
+      url="../../pages/goods_detail/main?goods_id={{item.goods_id}}"
+      open-type="navigate"
+    >
+      <view class="goods-item-left">
+        <image src="{{item.goods_small_logo?item.goods_small_logo:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}" mode="widthFix"/>
+      </view>
+      <view class="goods-item-right">
+        <view class="goods-title">
+          {{item.goods_name}}
+        </view>
+        <view class="goods-price">
+          ¥{{item.goods_price}}
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>

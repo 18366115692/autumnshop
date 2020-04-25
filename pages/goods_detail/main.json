@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "DetailSwiper": "../../components/detail/swiper/index",
+    "DetailTitle": "../../components/detail/title/index",
+    "DetailContent": "../../components/detail/content/index",
+    "DetailBottomBar": "../../components/detail/bottomBar/index"
+  },
+  "navigationBarTitleText": "商品详情"
+}

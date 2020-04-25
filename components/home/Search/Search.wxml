@@ -1,0 +1,6 @@
+<navigator class="search-container" url="../../pages/search/index" open-type="navigate">
+  <view class="search-input">
+    搜索
+  </view>
+</navigator>
+  

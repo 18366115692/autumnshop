@@ -1,0 +1,22 @@
+<scroll-view scroll-y class="detail-scroll">
+  <!-- 商品详情轮播图 开始 -->
+  <DetailSwiper swiperList="{{goodsDetailList.pics}}" bindchangeUrl="handlePreviewImg"></DetailSwiper>
+  <!-- 商品详情轮播图 开始 -->
+
+  <!-- 商品详情标题 开始 -->
+  <DetailTitle 
+    goodsDetailList="{{goodsDetailList}}" 
+    isCollect="{{isCollect}}"
+    bindcollectGood="handleCollectGood"
+  />
+  <!-- 商品详情标题 结束 -->
+
+  <!-- 商品详情内容 开始 -->
+  <DetailContent goodsDetailList="{{goodsDetailList}}"></DetailContent>
+  <!-- 商品详情内容 结束 -->
+</scroll-view>
+
+<!-- 商品详情底部导航 开始 -->
+<DetailBottomBar bindAddCart="handleAddCart"/>
+<!-- 商品详情底部导航 结束 -->
+  

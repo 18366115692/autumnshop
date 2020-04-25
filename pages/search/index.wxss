@@ -1,0 +1,38 @@
+page {
+  background-color: #dedede;
+}
+.search-wrapper {
+  padding: 20rpx;
+}
+.search-wrapper .search-title {
+  display: flex;
+}
+.search-wrapper .search-title input {
+  background-color: #fff;
+  flex: 1;
+  padding-left: 30rpx;
+}
+.search-wrapper .search-title button {
+  background-color: #fff;
+  width: 120rpx;
+  color: #666;
+  font-size: 28rpx;
+  font-weight: 300;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20rpx;
+}
+.search-wrapper .search-content {
+  margin-top: 20rpx;
+}
+.search-wrapper .search-content .search-item {
+  background-color: #fff;
+  margin-bottom: 4rpx;
+  padding: 20rpx;
+  border-radius: 5rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

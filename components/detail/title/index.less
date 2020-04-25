@@ -1,0 +1,32 @@
+.detail-title {
+  padding: 20rpx;
+  border-top: 10rpx solid #ccc;
+  border-bottom: 10rpx solid #ccc;
+  .detail-title-price {
+    color: var(--themeColor);
+    font-size: 32rpx;
+    font-weight: 800;
+  }
+  .detail-title-info {
+    display: flex;
+    .info-title {
+      flex: 4;
+      font-size: 30rpx;
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+    .info-collect {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-left: 1px solid #666;
+      .icon-shoucang1 {
+        color: var(--themeColor);
+      }
+    }
+  }
+}

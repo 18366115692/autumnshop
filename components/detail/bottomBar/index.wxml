@@ -1,0 +1,22 @@
+<view class="bottom-bar">
+  <view class="bottom-bar-left">
+    <view class="service">
+      <text class="iconfont icon-htmal5icon31"></text>
+      <text>联系客服</text>
+      <button open-type="contact" ></button>
+    </view>
+    <view class="share">
+      <text class="iconfont icon-fenxiang"></text>
+      <text>分享</text>  
+      <button open-type="share" ></button>
+    </view>
+    <navigator open-type="switchTab" url="../../pages/cart/index" class="shopcar">
+      <text class="iconfont icon-gouwuche"></text>
+      <text>购物车</text>  
+    </navigator>
+  </view>
+  <view class="bottom-bar-right">
+    <view class="addcar" bindtap="AddShopCar">加入购物车</view>
+    <view class="pay" bindtap="pay">立即购买</view>
+  </view>
+</view>
